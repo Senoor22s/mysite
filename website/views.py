@@ -1,11 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index_view(request):
-    return HttpResponse('<h1> Home Page </h1>')
+    return render(request,'New Folder/index.html')
 
 def about_view(request):
-    return HttpResponse('<h1> about Page </h1>')
+    return render(request,'New Folder/about.html')
 
 def contact_view(request):
-    return HttpResponse('<h1> Contact Page </h1>')
+    return render(request,'New Folder/contact.html')
